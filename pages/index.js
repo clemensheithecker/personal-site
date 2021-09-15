@@ -1,82 +1,87 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Image from "next/image";
+
+import profilePicture from "../public/images/profile.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Clemens Heithecker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <header>
+        <nav className="fixed top-0 left-0 z-10 flex items-center justify-center w-full text-lg font-semibold bg-white backdrop-filter bg-opacity-80 firefox:bg-opacity-100 backdrop-blur-xl sm:text-xl">
+          <div className="w-full max-w-screen-xl px-4 sm:px-8">
+            <div className="my-3">
+              <span>Clemens S. Heithecker</span>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+      <main className="flex items-center justify-center w-full max-w-screen-xl mx-auto sm:min-h-screen">
+        <div className="grid-rows-2 mx-8 mt-24 sm:mx-16 sm:my-16 sm:items-center sm:grid sm:gap-10 sm:grid-rows-none sm:grid-cols-12 md:mx-28">
+          <div className="md:col-span-7 sm:col-span-6">
+            <h2 className="font-serif text-4xl font-bold">Hello,</h2>
+            <p className="pt-4 text-xl font-medium">
+              I am an international <em>Bachelor of Science in economics</em>{" "}
+              student at Tilburg University in the Netherlands. I am passionate
+              about <em>computers</em>, <em>programming</em> and{" "}
+              <em>data science</em>.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
+            {/* className="text-blue-700" */}
+            <p className="pt-4 text-xl font-medium">
+              Follow me on{" "}
+              <span className="text-transparent decoration-clone bg-gradient-to-r bg-clip-text from-blue-700 to-purple-700">
+                <a
+                  href="https://github.com/clemensheithecker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-blue-700 hover:border-b-2"
+                >
+                  GitHub
+                </a>
+                <span className="text-black">,</span>{" "}
+                <a
+                  href="https://www.linkedin.com/in/clemensheithecker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-blue-700 hover:border-b-2"
+                >
+                  LinkedIn
+                </a>{" "}
+                <span className="text-black">and</span>{" "}
+                <a
+                  href="https://twitter.com/cheithecker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-blue-700 hover:border-b-2"
+                >
+                  Twitter
+                </a>
+              </span>
+              .
             </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          </div>
+          <div className="mt-12 mb-4 -mx-4 sm:mb-0 sm:mx-0 sm:mt-0 md:col-span-5 sm:col-span-6">
+            <Image
+              src={profilePicture}
+              alt="Picture of Clemens Heithecker"
+              layout="responsive"
+              placeholder="blur"
+            />
+            {/* <Image
+              src={profilePicture}
+              alt="Picture of Clemens Heithecker"
+              layout="responsive"
+              placeholder="blur"
+              className="rounded-xl"
+            /> */}
+          </div>
         </div>
       </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
