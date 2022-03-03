@@ -5,25 +5,14 @@ import profilePicture from "../public/images/profile.jpg";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Clemens Heithecker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <header>
-        <nav className="fixed top-0 left-0 z-10 flex items-center justify-center w-full text-lg font-semibold bg-white backdrop-filter bg-opacity-80 firefox:bg-opacity-100 backdrop-blur-xl sm:text-xl">
-          <div className="w-full max-w-screen-xl px-4 sm:px-8">
-            <div className="my-3">
-              <span>Clemens S. Heithecker</span>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <main className="flex items-center justify-center w-full max-w-screen-xl mx-auto sm:min-h-screen">
-        <div className="grid-rows-2 mx-8 mt-24 sm:mx-16 sm:my-16 sm:items-center sm:grid sm:gap-10 sm:grid-rows-none sm:grid-cols-12 md:mx-28">
-          <div className="md:col-span-7 sm:col-span-6">
+      <main className="mx-auto flex w-full max-w-screen-xl items-center justify-center">
+        <div className="mx-8 mt-24 grid-rows-2 sm:mx-16 sm:my-16 sm:grid sm:grid-cols-12 sm:grid-rows-none sm:items-center sm:gap-10 md:mx-28">
+          <div className="sm:col-span-6 md:col-span-7">
             <h2 className="font-serif text-4xl font-bold">Hello,</h2>
             <p className="pt-4 text-xl font-medium">
               I am an international <em>Bachelor of Science in economics</em>{" "}
@@ -34,7 +23,7 @@ export default function Home() {
             {/* className="text-blue-700" */}
             <p className="pt-4 text-xl font-medium">
               Follow me on{" "}
-              <span className="text-transparent decoration-clone bg-gradient-to-r bg-clip-text from-blue-700 to-purple-700">
+              <span className="bg-gradient-to-r from-blue-700 to-purple-700 decoration-clone bg-clip-text text-transparent">
                 <a
                   href="https://github.com/clemensheithecker"
                   target="_blank"
@@ -65,23 +54,16 @@ export default function Home() {
               .
             </p>
           </div>
-          <div className="mt-12 mb-4 -mx-4 sm:mb-0 sm:mx-0 sm:mt-0 md:col-span-5 sm:col-span-6">
+          <div className="-mx-4 mt-12 mb-4 sm:col-span-6 sm:mx-0 sm:mb-0 sm:mt-0 md:col-span-5">
             <Image
               src={profilePicture}
               alt="Picture of Clemens Heithecker"
               layout="responsive"
               placeholder="blur"
             />
-            {/* <Image
-              src={profilePicture}
-              alt="Picture of Clemens Heithecker"
-              layout="responsive"
-              placeholder="blur"
-              className="rounded-xl"
-            /> */}
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 }
