@@ -6,7 +6,7 @@ export default function layout({ children }) {
       <header>
         <Navbar />
       </header>
-      <div className="mt-[52px] flex min-h-[calc(100vh-52px)]">{children}</div>
+      <div className="mt-[68px] flex min-h-[calc(100vh-68px)]">{children}</div>
     </>
   );
 }
