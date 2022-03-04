@@ -5,12 +5,13 @@ import Link from "next/link";
 
 export default function Blog({ posts }) {
   return (
-    <div className="mx-auto w-full max-w-screen-lg px-5 py-2 sm:py-8 sm:px-11">
+    <div className="mx-auto w-full max-w-screen-lg px-5 py-5 sm:py-8 sm:px-11">
       <h1 className="mb-4 font-serif text-4xl font-bold">Blog</h1>
       <p className="mb-8">
         This blog is a space for sharing my thoughts and things I find
         interesting. I am planning on writing about tech, data, and programming.
       </p>
+      <hr className="mb-8" />
       <div className="space-y-8">
         {posts.map((post, index) => (
           <div>
