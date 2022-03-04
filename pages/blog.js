@@ -21,7 +21,7 @@ export default function Blog({ posts }) {
                   <h4 className="mb-2 w-full text-xl font-semibold sm:mb-0">
                     {post.frontMatter.title}
                   </h4>
-                  <p className="w-32 text-gray-600 sm:text-right">
+                  <p className="w-32 text-gray-600 dark:text-gray-400 sm:text-right">
                     {post.frontMatter.date}
                   </p>
                 </div>

@@ -3,7 +3,7 @@ import Navitem from "./navitem";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 z-10 w-full bg-white bg-opacity-80 backdrop-blur-xl backdrop-filter firefox:bg-opacity-100">
+    <nav className="fixed top-0 left-0 z-10 w-full bg-white bg-opacity-80 backdrop-blur-xl backdrop-filter firefox:bg-opacity-100 dark:bg-black">
       <div className="mx-auto max-w-screen-lg px-2 py-4 sm:px-8">
         <div className="flex items-center justify-between">
           <div className="flex space-x-2">

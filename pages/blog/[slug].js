@@ -6,8 +6,8 @@ import matter from "gray-matter";
 
 export default function PostPage({ frontMatter: { date }, mdxSource }) {
   return (
-    <article className="prose mx-auto w-full max-w-screen-lg py-5 px-5 prose-h1:font-serif prose-h2:font-serif sm:py-8 sm:px-11">
-      <p className="text-gray-600">Published on {date}</p>
+    <article className="prose mx-auto w-full max-w-screen-lg py-5 px-5 prose-h1:font-serif prose-h2:font-serif dark:prose-invert sm:py-8 sm:px-11">
+      <p className="text-gray-600 dark:text-gray-400">Published on {date}</p>
       <MDXRemote {...mdxSource} />
     </article>
   );
