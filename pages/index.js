@@ -16,10 +16,26 @@ export default function Home() {
             <div>
               <h2 className="mb-4 font-serif text-2xl font-bold">Hello,</h2>
               <p className="mb-2">
-                I am an international <em>Bachelor of Science in economics</em>{" "}
-                student at Tilburg University in the Netherlands. I am
-                passionate about <em>computers</em>, <em>programming</em> and{" "}
-                <em>data science</em>.
+                I am Clemens&mdash;a data and programming enthusiast ready to
+                put my data wrangling, visualization, and modeling skills to
+                work. My fascination with <em>data exploration</em>,{" "}
+                <em>regression analyis</em>, and <em>machine learning</em>{" "}
+                together with my passion for <em>computers</em> and{" "}
+                <em>programming</em> inspire me to learn something new every
+                day.
+              </p>
+              <p className="mb-2">
+                Currently, I am finalizing my bachelor of science degree in
+                economics as an international student at{" "}
+                <a
+                  href="https://www.tilburguniversity.edu/education/bachelors-programs/economics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:border-b-2"
+                >
+                  Tilburg University
+                </a>
+                .
               </p>
               <p className="mb-10">
                 Follow me on{" "}
