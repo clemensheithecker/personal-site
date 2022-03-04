@@ -7,8 +7,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Clemens S. Heithecker</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Clemens Heithecker</title>
+        <meta
+          name="description"
+          content="I am a data and programming enthusiast trying to learn something new everyday."
+        />
+        <meta property="og:title" content="Clemens Heithecker" />
+        <meta
+          property="og:description"
+          content="I am a data and programming enthusiast trying to learn something new everyday."
+        />
+        <meta property="og:url" content="https://clemensheithecker.com" />
+        <meta property="og:type" content="website" />
       </Head>
       <main className="mx-auto flex max-w-screen-lg items-center justify-center px-5 py-5 sm:py-8 sm:px-11">
         <div className="sm:grid sm:grid-cols-12 sm:grid-rows-1 sm:gap-6">
@@ -20,9 +30,7 @@ export default function Home() {
                 put my data wrangling, visualization, and modeling skills to
                 work. My fascination with <em>data exploration</em>,{" "}
                 <em>regression analyis</em>, and <em>machine learning</em>{" "}
-                together with my passion for <em>computers</em> and{" "}
-                <em>programming</em> inspire me to learn something new every
-                day.
+                inspire me to learn something new every day.
               </p>
               <p className="mb-2">
                 Currently, I am finalizing my bachelor of science degree in

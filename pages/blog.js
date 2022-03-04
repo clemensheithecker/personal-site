@@ -1,37 +1,55 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Blog({ posts }) {
   return (
-    <div className="mx-auto w-full max-w-screen-lg px-5 py-5 sm:py-8 sm:px-11">
-      <h1 className="mb-4 font-serif text-4xl font-bold">Blog</h1>
-      <p className="mb-8">
-        This blog is a space for sharing my thoughts and things I find
-        interesting. I am planning on writing about tech, data, and programming.
-      </p>
-      <hr className="mb-8" />
-      <div className="space-y-8">
-        {posts.map((post, index) => (
-          <div>
-            <Link href={"/blog/" + post.slug} passHref key={index}>
-              <a>
-                <div className="mb-2 flex flex-col sm:flex-row">
-                  <h4 className="mb-2 w-full text-xl font-semibold sm:mb-0">
-                    {post.frontMatter.title}
-                  </h4>
-                  <p className="w-32 text-gray-600 dark:text-gray-400 sm:text-right">
-                    {post.frontMatter.date}
-                  </p>
-                </div>
-                <p>{post.frontMatter.description}</p>
-              </a>
-            </Link>
-          </div>
-        ))}
+    <>
+      <Head>
+        <title>Blog - Clemens Heithecker</title>
+        <meta
+          name="description"
+          content="I write about my projects, computers, and everything else I find interesting."
+        />
+        <meta property="og:title" content="Blog - Clemens Heithecker" />
+        <meta
+          property="og:description"
+          content="I write about my projects, computers, and everything else I find interesting."
+        />
+        <meta property="og:url" content="https://clemensheithecker.com/blog" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <div className="mx-auto w-full max-w-screen-lg px-5 py-5 sm:py-8 sm:px-11">
+        <h1 className="mb-4 font-serif text-4xl font-bold">Blog</h1>
+        <p className="mb-8">
+          This blog is a space for sharing my thoughts and things I find
+          interesting. I am planning on writing about tech, data, and
+          programming.
+        </p>
+        <hr className="mb-8" />
+        <div className="space-y-8">
+          {posts.map((post, index) => (
+            <div>
+              <Link href={"/blog/" + post.slug} passHref key={index}>
+                <a>
+                  <div className="mb-2 flex flex-col sm:flex-row">
+                    <h4 className="mb-2 w-full text-xl font-semibold sm:mb-0">
+                      {post.frontMatter.title}
+                    </h4>
+                    <p className="w-32 text-gray-600 dark:text-gray-400 sm:text-right">
+                      {post.frontMatter.date}
+                    </p>
+                  </div>
+                  <p>{post.frontMatter.description}</p>
+                </a>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
