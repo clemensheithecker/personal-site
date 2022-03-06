@@ -8,7 +8,7 @@ import moment from "moment";
 import path from "path";
 
 export default function PostPage({
-  frontMatter: { title, date, description },
+  frontMatter: { title, date, updated, description },
   slug,
   mdxSource,
 }) {
@@ -27,7 +27,9 @@ export default function PostPage({
       </Head>
       <article className="prose mx-auto w-full max-w-screen-lg py-5 px-5 prose-h1:font-serif prose-h2:font-serif dark:prose-invert sm:py-8 sm:px-11">
         <p className="text-gray-600 dark:text-gray-400">
-          Published on {moment(date).format("LL")}
+          {updated == null
+            ? `Published on ${moment(date).format("LL")}`
+            : `Last updated on ${moment(updated).format("LL")}`}
         </p>
         <MDXRemote {...mdxSource} />
       </article>

@@ -41,7 +41,9 @@ export default function Blog({ posts }) {
                       {post.frontMatter.title}
                     </h4>
                     <p className="w-32 text-gray-600 dark:text-gray-400 sm:text-right">
-                      {moment(post.frontMatter.date).format("LL")}
+                      {post.frontMatter.updated == null
+                        ? moment(post.frontMatter.date).format("LL")
+                        : moment(post.frontMatter.updated).format("LL")}
                     </p>
                   </div>
                   <p>{post.frontMatter.description}</p>
