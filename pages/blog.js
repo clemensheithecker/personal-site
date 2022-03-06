@@ -1,8 +1,10 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import Head from "next/head";
 import Link from "next/link";
+
+import fs from "fs";
+import matter from "gray-matter";
+import moment from "moment";
+import path from "path";
 
 export default function Blog({ posts }) {
   return (
@@ -29,25 +31,25 @@ export default function Blog({ posts }) {
           programming.
         </p>
         <hr className="mb-8" />
-        <div className="space-y-8">
+        <ul className="space-y-8">
           {posts.map((post, index) => (
-            <div>
-              <Link href={"/blog/" + post.slug} passHref key={index}>
+            <li key={index}>
+              <Link href={"/blog/" + post.slug} passHref>
                 <a>
                   <div className="mb-2 flex flex-col sm:flex-row">
                     <h4 className="mb-2 w-full text-xl font-semibold sm:mb-0">
                       {post.frontMatter.title}
                     </h4>
                     <p className="w-32 text-gray-600 dark:text-gray-400 sm:text-right">
-                      {post.frontMatter.date}
+                      {moment(post.frontMatter.date).format("LL")}
                     </p>
                   </div>
                   <p>{post.frontMatter.description}</p>
                 </a>
               </Link>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </>
   );

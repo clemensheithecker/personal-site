@@ -1,9 +1,11 @@
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemote } from "next-mdx-remote";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import Head from "next/head";
+
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
+import fs from "fs";
+import matter from "gray-matter";
+import moment from "moment";
+import path from "path";
 
 export default function PostPage({
   frontMatter: { title, date, description },
@@ -24,7 +26,9 @@ export default function PostPage({
         <meta property="og:type" content="article" />
       </Head>
       <article className="prose mx-auto w-full max-w-screen-lg py-5 px-5 prose-h1:font-serif prose-h2:font-serif dark:prose-invert sm:py-8 sm:px-11">
-        <p className="text-gray-600 dark:text-gray-400">Published on {date}</p>
+        <p className="text-gray-600 dark:text-gray-400">
+          Published on {moment(date).format("LL")}
+        </p>
         <MDXRemote {...mdxSource} />
       </article>
     </>
