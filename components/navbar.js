@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navitem from "./navitem";
 
 export default function Navbar() {
