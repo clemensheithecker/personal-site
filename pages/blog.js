@@ -30,7 +30,7 @@ export default function Blog({ posts }) {
           interesting. I am planning on writing about tech, data, and
           programming.
         </p>
-        <hr className="mb-8" />
+        <hr className="border-1 mb-8 w-full border-gray-200 dark:border-gray-800" />
         <ul className="space-y-8">
           {posts.map((post, index) => (
             <li
@@ -40,16 +40,18 @@ export default function Blog({ posts }) {
               <Link href={"/blog/" + post.slug} passHref>
                 <a>
                   <div className="mb-2 flex flex-col sm:flex-row">
-                    <h4 className="mb-2 w-full text-xl font-semibold sm:mb-0">
+                    <h2 className="mb-2 w-full text-xl font-semibold sm:mb-0">
                       {post.frontMatter.title}
-                    </h4>
+                    </h2>
                     <p className="w-32 text-gray-600 dark:text-gray-400 sm:text-right">
                       {post.frontMatter.updated == null
                         ? moment(post.frontMatter.date).format("LL")
                         : moment(post.frontMatter.updated).format("LL")}
                     </p>
                   </div>
-                  <p>{post.frontMatter.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {post.frontMatter.description}
+                  </p>
                 </a>
               </Link>
             </li>
