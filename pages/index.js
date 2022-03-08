@@ -20,7 +20,7 @@ export default function Home() {
         <meta property="og:url" content="https://clemensheithecker.com" />
         <meta property="og:type" content="website" />
       </Head>
-      <main className="mx-auto flex max-w-screen-lg items-center justify-center px-5 py-5 sm:py-8 sm:px-11">
+      <main className="mx-auto flex max-w-screen-lg items-center justify-center px-5 py-5 sm:h-[calc(100vh-68px)] sm:py-8 sm:px-11">
         <div className="sm:grid sm:grid-cols-12 sm:grid-rows-1 sm:gap-6">
           <div className="flex items-center justify-center sm:col-span-6 md:col-span-7">
             <div>
@@ -39,7 +39,7 @@ export default function Home() {
                   href="https://www.tilburguniversity.edu/education/bachelors-programs/economics"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                  className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   Tilburg University
                 </a>
@@ -51,7 +51,7 @@ export default function Home() {
                   href="https://github.com/clemensheithecker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                  className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   GitHub
                 </a>
@@ -60,7 +60,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/clemensheithecker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                  className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   LinkedIn
                 </a>{" "}
@@ -69,7 +69,7 @@ export default function Home() {
                   href="https://twitter.com/cheithecker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                  className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   Twitter
                 </a>

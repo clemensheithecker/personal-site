@@ -1,3 +1,4 @@
+import Footer from "./footer";
 import Navbar from "./navbar";
 
 export default function layout({ children }) {
@@ -6,7 +7,10 @@ export default function layout({ children }) {
       <header>
         <Navbar />
       </header>
-      <div className="mt-[68px] flex min-h-[calc(100vh-68px)]">{children}</div>
+      <div className="mt-[68px] flex min-h-[calc(100vh-68px)] flex-col justify-between">
+        {children}
+        <Footer />
+      </div>
     </>
   );
 }

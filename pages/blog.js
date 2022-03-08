@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
         <hr className="mb-8" />
         <ul className="space-y-8">
           {posts.map((post, index) => (
-            <li key={index}>
+            <li key={index} className="transition-all hover:scale-[1.01]">
               <Link href={"/blog/" + post.slug} passHref>
                 <a>
                   <div className="mb-2 flex flex-col sm:flex-row">
