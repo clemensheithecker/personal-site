@@ -39,7 +39,7 @@ export default function Home() {
                   href="https://www.tilburguniversity.edu/education/bachelors-programs/economics"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:border-b-2"
+                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   Tilburg University
                 </a>
@@ -51,7 +51,7 @@ export default function Home() {
                   href="https://github.com/clemensheithecker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:border-b-2"
+                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   GitHub
                 </a>
@@ -60,7 +60,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/clemensheithecker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:border-b-2"
+                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   LinkedIn
                 </a>{" "}
@@ -69,7 +69,7 @@ export default function Home() {
                   href="https://twitter.com/cheithecker"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:border-b-2"
+                  className="no-underline hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
                 >
                   Twitter
                 </a>
