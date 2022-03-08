@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="mx-auto w-full max-w-screen-lg px-5 pt-5 pb-10 sm:px-11 sm:pt-8 sm:pb-16">
+    <footer className="mx-auto w-full max-w-screen-lg px-5 pt-5 pb-10 sm:px-11 sm:pt-8 sm:pb-16">
       <hr className="mb-8" />
       <ul className="grid grid-cols-1 gap-4 text-gray-600 sm:grid-cols-3">
         <li>
@@ -58,6 +58,6 @@ export default function Footer() {
           </ul>
         </li>
       </ul>
-    </div>
+    </footer>
   );
 }
