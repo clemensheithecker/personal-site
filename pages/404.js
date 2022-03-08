@@ -27,7 +27,7 @@ export default function Custom404() {
         />
         <meta property="og:type" content="website" />
       </Head>
-      <main className="mx-auto max-w-screen-lg px-5 py-5 sm:flex sm:items-center sm:justify-center sm:py-8 sm:px-11">
+      <main className="mx-auto flex max-w-screen-lg items-center justify-center px-5 py-5 sm:h-[calc(100vh-68px)] sm:py-8 sm:px-11">
         <div className="sm:max-w-xl">
           <h1 className="mb-4 font-serif text-4xl font-bold">
             The page you're looking for can't be found.
