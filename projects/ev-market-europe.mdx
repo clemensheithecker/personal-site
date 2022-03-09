@@ -1,0 +1,50 @@
+---
+id: "ev-market-europe"
+title: "European EV Market Performance Dashboard"
+description: "Data sourcing, forecasting, and visualization using MS Excel and Power BI."
+tags: ["MS Excel", "MS Power BI"]
+link: "https://github.com/clemensheithecker/ev-market-europe"
+gradient: "from-sky-400 to-blue-500"
+coverImagePath: "/images/projects/ev-market-europe.png"
+---
+
+<ProjectInfo
+  description={description}
+  tags={tags}
+  link={link}
+  gradient={gradient}
+/>
+
+# Europe's Electric Vehicle Infrastructure and Market—A Performance Dashboard
+
+This interactive dashboard provides private and public decision-makers with an overview of the infrastructure and market situation of passenger electric vehicles in Europe. It highlights many key performance indicators (KPIs) and targets by illustrating trends through various graphs and maps. It was built with _Microsoft Power BI_ and _Excel_ using a _star schema_ database modeling approach to organize the multi-dimensional KPIs. The dashboard includes many interactive graphs that change based on what year and country are selected. It also displays static 2021 (2020) KPIs we found most important to give users a reference point (for the _then_ current situation).
+
+This project was a collaboration with [Thea A. Putnam](https://github.com/theaputnam) as part of group work in a Decision Support Systems course at [Tilburg University](https://www.tilburguniversity.edu) in the Netherlands.
+
+## Data Preparation and Database Integration
+
+After downloading the data from the European Alternative Fuels Observatory, we cleaned it by deleting null values, changing data types of attributes, and removing irrelevant entries. Following this, we connected the dimension tables—our key performance indicators (KPIs)—to our fact table—a list of EU countries—using primary and foreign keys in Power BI. We modeled our database using a star schema approach.
+
+![Visualization of Database Star Schema](/images/projects/ev-market-europe/database-visualization.jpg)
+
+## Visualization of the KPIs (Key Performance Indicators)
+
+Following a quick sketch of our design, we created the visuals for the performance dashboard. We included exponential smoothing forecasts for future predictions, which we generated in Excel. Although our exponential smoothing forecast yielded better results than a moving average forecast, we still believed it under-predicts future growth.
+
+![Page 1: The Market of Electric Vehicles](/images/projects/ev-market-europe/page-1-ev-market.jpg)
+
+We also included a map of countries that users can click on to gain insights about specific countries. For example, whether a country reached its NPF charging point target in 2020 that we visualized using a meter.
+
+![Page 2: The Infrastructure of Electric Vehicles](/images/projects/ev-market-europe/page-2-infrastructure.jpg)
+
+The performance dashboard file `dashboard.pbix` can be opened in Microsoft Power BI.
+
+## References
+
+We mainly used data from the [European Alternative Fuels Observatory (EAFO)](https://eafo.eu). For the EV popularity index, we used data from [Google Trends](https://trends.google.com) for the keyword "electric vehicle" translated into each country's most-used language. We translated the word using [Google Translate](https://translate.google.com/) and used the first suggested translation.
+
+European Alternative Fuels Observatory. (2008–2021a). _Alternative fuels (electricity) charging infra stats | EAFO_ [Dataset]. [https://www.eafo.eu/alternative-fuels/electricity/charging-infra-stats](https://www.eafo.eu/alternative-fuels/electricity/charging-infra-stats)
+
+European Alternative Fuels Observatory. (2008–2021b). _Vehicle and fleet data (passenger cars)_ [Dataset]. [https://www.eafo.eu/vehicles-and-fleet/m1](https://www.eafo.eu/vehicles-and-fleet/m1)
+
+European Alternative Fuels Observatory. (2021). _Incentives and Legislation_ [Dataset]. [https://www.eafo.eu/countries/european-union/23640/incentives](https://www.eafo.eu/countries/european-union/23640/incentives)

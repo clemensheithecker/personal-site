@@ -1,0 +1,46 @@
+---
+id: "demographic-change-germany"
+title: "Data Visualization of Demographic Change in Germany"
+description: "Data transformation and visualization using R and Tidyverse."
+tags: ["R", "Tidyverse"]
+link: "https://github.com/clemensheithecker/demographic-change-germany"
+gradient: "from-cyan-600 to-blue-600"
+coverImagePath: "/images/projects/demographic-change-germany.png"
+---
+
+<ProjectInfo
+  description={description}
+  tags={tags}
+  link={link}
+  gradient={gradient}
+/>
+
+# Demographic Change in Germany—A Data Visualization Case Study
+
+A low birth rate and rising life expectancy are fueling demographic change in Germany. These trends pose economic challenges such as a dwindling labor force and the underfunding of social security systems. As a result, lawmakers must re-evaluate existing public policies and design new solutions. This case study provides data visualizations supporting the exploration and evaluation of policy options to solve these demographic problems.
+
+## Visualizations
+
+A visualization of the average live births per woman over time. The data is grouped by region: Federal Republic of Germany, former territory of the Federal Republic, former territory of East Germany. The data shows a declining birth rate in the mid and late 20th century, followed by a period of stagnation in most of Germany, and a continued decline in recent years.
+
+![Total Fertility Rate in Germany](/images/projects/demographic-change-germany/plot-1-fertility-rate.png)
+
+A visual comparison of the at-risk-of-poverty rate by household type. The rate is measured against the federal median income. Having many children and raising children alone significantly increases a family's risk of poverty.
+
+![At-Risk-of-Poverty Rate of Families](/images/projects/demographic-change-germany/plot-2-poverty-risk-rate.png)
+
+A map visualization to compare the total fertility rates between countries of the European Union and the European Free Trade Association. Germany's fertility rate lies below the European average.
+
+![Total Fertility Rates in Europe](/images/projects/demographic-change-germany/plot-3-fertility-rate-eu.png)
+
+Find my detailed implementation of the visualizations in `notebook.pdf`.
+
+## References
+
+I used data from the following sources:
+
+Eurostat. (n.d.). _Total fertility rate_. Retrieved April 9, 2021, from [https://ec.europa.eu/eurostat/databrowser/view/tps00199/default/table?lang=en](https://ec.europa.eu/eurostat/databrowser/view/tps00199/default/table?lang=en)
+
+Federal Statistical Office (Destatis). (2020a, July 29). _Completed cohort fertility_. Retrieved April 9, 2021, from [https://www.destatis.de/EN/Themes/Society-Environment/Population/Births/Tables/female-cohorts.html](https://www.destatis.de/EN/Themes/Society-Environment/Population/Births/Tables/female-cohorts.html)
+
+Federal Statistical Office (Destatis). (2020b, August 13). _Armutsgefährdungsquote gemessen am Bundesmedian nach Haushaltstyp_. Retrieved April 9, 2021, from [https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Soziales/Sozialberichterstattung/Tabellen/06agq-zvbm-haushaltstyp.html](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Soziales/Sozialberichterstattung/Tabellen/06agq-zvbm-haushaltstyp.html)

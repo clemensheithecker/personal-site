@@ -5,8 +5,10 @@ export const projectsData = [
     description:
       "Detection of clickbait in headlines via natural language processing using Python and NLTK.",
     tags: ["Python", "NLTK"],
-    link: "https://github.com/clemensheithecker/clickbait-headline-classification",
+    link: "/projects/clickbait-headline-classification",
     gradient: "from-rose-400 to-orange-300",
+    coverImage:
+      "https://clemensheithecker.com/images/projects/clickbait-headline-classification.png",
   },
   {
     id: "nyc-bike-sharing",
@@ -14,24 +16,30 @@ export const projectsData = [
     description:
       "Analysis of ride-sharing patterns based on the weather using MySQL, Python, and Seaborn.",
     tags: ["MySQL", "Python", "Seaborn"],
-    link: "https://github.com/clemensheithecker/nyc-bike-sharing",
+    link: "/projects/nyc-bike-sharing",
     gradient: "from-fuchsia-500 to-indigo-500",
+    coverImage:
+      "https://clemensheithecker.com/images/projects/nyc-bike-sharing.png",
   },
   {
-    id: "clickbait-headline-classification",
+    id: "ev-market-europe",
     title: "European EV Market Performance Dashboard",
     description:
       "Data sourcing, forecasting, and visualization using MS Excel and Power BI.",
     tags: ["MS Excel", "MS Power BI"],
-    link: "https://github.com/clemensheithecker/ev-market-europe",
+    link: "/projects/ev-market-europe",
     gradient: "from-sky-400 to-blue-500",
+    coverImage:
+      "https://clemensheithecker.com/images/projects/clickbait-headline-classification.png",
   },
   {
-    id: "clickbait-headline-classification",
-    title: "Data Visualization of Demographic Change in Europe",
+    id: "demographic-change-germany",
+    title: "Data Visualization of Demographic Change in Germany",
     description: "Data transformation and visualization using R and Tidyverse.",
     tags: ["R", "Tidyverse"],
-    link: "https://github.com/clemensheithecker/demographic-change-germany",
+    link: "/projects/demographic-change-germany",
     gradient: "from-cyan-600 to-blue-600",
+    coverImage:
+      "https://clemensheithecker.com/images/projects/clickbait-headline-classification.png",
   },
 ];
