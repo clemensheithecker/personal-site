@@ -117,7 +117,7 @@ export default function Home({ projects }) {
               />
             ))}
           </div>
-          <p className="text-gray-600">
+          <p>
             Find all my projects on my{" "}
             <a
               href="https://github.com/clemensheithecker"
