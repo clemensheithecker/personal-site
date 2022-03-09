@@ -3,19 +3,13 @@ import Image from "next/image";
 
 import ProjectCard from "../components/ProjectCard";
 
+import { projectsData } from "../data/projects";
 import profilePicture from "../public/images/profile.jpg";
 
 export const getStaticProps = async () => {
-  const res = await fetch(
-    process.env.NODE_ENV === "production"
-      ? "https://clemensheithecker.com/api/projects"
-      : "http://localhost:3000/api/projects"
-  );
-  const data = await res.json();
-
   return {
     props: {
-      projects: data,
+      projects: projectsData,
     },
   };
 };
