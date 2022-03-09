@@ -48,7 +48,7 @@ export default function ProjectPage({
         />
         <meta property="og:type" content="article" />
       </Head>
-      <article className="prose-t prose prose-bw mx-auto w-full max-w-screen-lg py-5 px-5 prose-h1:font-serif prose-h2:font-serif prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-2 hover:prose-a:underline-offset-2 prose-code:rounded-md prose-code:bg-gray-100 prose-code:py-1 prose-code:px-2 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:rounded-none prose-ul:list-[square] prose-table:w-fit dark:prose-invert dark:prose-code:bg-gray-900 sm:py-8 sm:px-11">
+      <article className="prose-t prose prose-bw mx-auto w-full max-w-screen-lg py-5 px-5 prose-h1:font-serif prose-h2:font-serif prose-a:break-words prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-2 hover:prose-a:underline-offset-2 prose-code:rounded-md prose-code:bg-gray-100 prose-code:py-1 prose-code:px-2 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:rounded-none prose-ul:list-[square] prose-table:w-fit dark:prose-invert dark:prose-code:bg-gray-900 sm:py-8 sm:px-11">
         <div className="mb-12 lg:-mx-8">
           <Image
             src={coverImage}
