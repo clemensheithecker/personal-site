@@ -37,17 +37,17 @@ and _Do people rent bikes less often on rainy days?_
 
 ![Precipitation Effect](/images/projects/nyc-bike-sharing/precipitation-effect.png)
 
-A summary of our analysis can be found in `presentation.pdf`.
+A summary of our analysis can be found in [presentation.pdf](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/presentation.pdf).
 
 ## Instructions
 
-Change the MySQL user credentials in the `config` dictionary in all Python scripts (`database-setup.py`, `analysis-stations.py`, and `analysis-rides.py`).
+Change the MySQL user credentials in the `config` dictionary in all Python scripts ([database-setup.py](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/database-setup.py), [analysis-stations.py](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/analysis-stations.py), and [analysis-rides.py](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/analysis-rides.py)).
 
-1. Run `database-setup.py` to setup the database with the schema defined in `database-setup.sql`, read the datasets, perform basic cleaning, and insert the data into the MySQL database.
+1. Run [database-setup.py](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/database-setup.py) to setup the database with the schema defined in [database-setup.sql](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/database-setup.sql), read the datasets, perform basic cleaning, and insert the data into the MySQL database.
 
-   _NOTE: The database is overwritten every time the setup file runs. This is so changes can be made more conveninetly without manually deleting the database for every change in the setup. To prevent this, comment out `DROP DATABASE IF EXISTS nyc_bike_sharing;` in `database-setup.sql`._
+   _NOTE: The database is overwritten every time the setup file runs. This is so changes can be made more conveninetly without manually deleting the database for every change in the setup. To prevent this, comment out `DROP DATABASE IF EXISTS nyc_bike_sharing;` in [database-setup.sql](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/database-setup.sql)._
 
-2. Run `analysis-stations.py` and `analysis-rides.py` to query the database using the respective SQL scripts (`analysis-stations.sql` and `analysis-rides.sql`). Both scripts each generate three visualizations in the `\figures` folder.
+2. Run [analysis-stations.py](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/analysis-stations.py) and [analysis-rides.py](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/analysis-rides.py) to query the database using the respective SQL scripts ([analysis-stations.sql](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/analysis-stations.sql) and [analysis-rides.sql](https://github.com/clemensheithecker/nyc-bike-sharing/blob/main/analysis-rides.sql). Both scripts each generate three visualizations in the [\figures](https://github.com/clemensheithecker/nyc-bike-sharing/tree/main/figures) folder.
 
 ## Libraries Used
 
