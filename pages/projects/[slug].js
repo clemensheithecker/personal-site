@@ -10,7 +10,7 @@ import rehypeImgSize from "rehype-img-size";
 import remarkGfm from "remark-gfm";
 import remarkUnwrapImages from "remark-unwrap-images";
 
-import ProjectInfo from "../../components/projectInfo";
+import ProjectInfo from "../../components/ProjectInfo";
 
 const components = {
   img: (props) => (
