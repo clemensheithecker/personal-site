@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import "tailwindcss/tailwind.css";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
