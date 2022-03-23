@@ -6,6 +6,7 @@ module.exports = {
   },
   redirects: async () => {
     return [
+      // Social media
       {
         source: "/github",
         destination: "https://github.com/clemensheithecker/",
@@ -19,6 +20,12 @@ module.exports = {
       {
         source: "/twitter",
         destination: "https://twitter.com/cheithecker",
+        permanent: true,
+      },
+      // Projects
+      {
+        source: "/bachelor-thesis",
+        destination: "github.com/clemensheithecker/bachelor-thesis",
         permanent: true,
       },
     ];
