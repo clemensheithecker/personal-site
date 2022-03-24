@@ -25,7 +25,7 @@ module.exports = {
       // Projects
       {
         source: "/bachelor-thesis",
-        destination: "github.com/clemensheithecker/bachelor-thesis",
+        destination: "https://github.com/clemensheithecker/bachelor-thesis",
         permanent: true,
       },
     ];
