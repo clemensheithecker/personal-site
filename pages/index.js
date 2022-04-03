@@ -51,7 +51,7 @@ export default function Home({ projects }) {
                     href="https://www.tilburguniversity.edu/education/bachelors-programs/economics"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                    className="text-blue-600 hover:underline hover:decoration-blue-600 hover:decoration-2 hover:underline-offset-2 dark:text-blue-500 dark:hover:decoration-blue-500"
                   >
                     Tilburg University
                   </a>
@@ -63,7 +63,7 @@ export default function Home({ projects }) {
                     href="https://github.com/clemensheithecker"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                    className="text-blue-600 hover:underline hover:decoration-blue-600 hover:decoration-2 hover:underline-offset-2 dark:text-blue-500 dark:hover:decoration-blue-500"
                   >
                     GitHub
                   </a>
@@ -72,7 +72,7 @@ export default function Home({ projects }) {
                     href="https://www.linkedin.com/in/clemensheithecker"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                    className="text-blue-600 hover:underline hover:decoration-blue-600 hover:decoration-2 hover:underline-offset-2 dark:text-blue-500 dark:hover:decoration-blue-500"
                   >
                     LinkedIn
                   </a>{" "}
@@ -81,7 +81,7 @@ export default function Home({ projects }) {
                     href="https://twitter.com/cheithecker"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+                    className="text-blue-600 hover:underline hover:decoration-blue-600 hover:decoration-2 hover:underline-offset-2 dark:text-blue-500 dark:hover:decoration-blue-500"
                   >
                     Twitter
                   </a>
@@ -123,7 +123,7 @@ export default function Home({ projects }) {
               href="https://github.com/clemensheithecker"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline hover:decoration-gray-300 hover:decoration-2 hover:underline-offset-2"
+              className="text-blue-600 hover:underline hover:decoration-blue-600 hover:decoration-2 hover:underline-offset-2 dark:text-blue-500 dark:hover:decoration-blue-500"
             >
               GitHub page
             </a>
