@@ -5,9 +5,9 @@ export default function ProjectInfo({ tags, link }) {
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="mb-2 block w-fit break-words rounded-lg bg-gray-100 px-2 py-1 text-blue-600 no-underline hover:underline hover:decoration-2 hover:underline-offset-2 dark:bg-gray-900 dark:text-blue-500 sm:mb-4"
+        className="mb-2 block w-fit break-words rounded-lg bg-blue-50 px-2 py-1 text-blue-600 no-underline hover:underline hover:decoration-2 hover:underline-offset-2 dark:bg-gray-900 dark:text-blue-500 sm:mb-4 sm:mb-4"
       >
-        Link to GitHub repository
+        GitHub repository
       </a>
       <ul className="mb-4 flex space-x-2 sm:space-x-4">
         {tags.map((tag, index) => (
