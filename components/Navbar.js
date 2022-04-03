@@ -26,7 +26,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 z-10 w-full bg-white bg-opacity-80 backdrop-blur-xl backdrop-filter firefox:bg-opacity-100 dark:bg-black dark:bg-opacity-80 dark:firefox:bg-opacity-100 ${
         clientWindowHeight > 0
-          ? `shadow-sm ring-1 ring-gray-900 ring-opacity-5`
+          ? `shadow-sm ring-1 ring-gray-900 ring-opacity-5 dark:ring-gray-100 dark:ring-opacity-10`
           : ``
       }`}
     >

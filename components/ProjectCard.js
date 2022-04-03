@@ -12,7 +12,7 @@ export default function ProjectCard({
       <a
         className={`transform bg-gradient-to-r ${gradient} p-1 transition-all hover:scale-[1.01]`}
       >
-        <div className="h-full flex-col justify-between bg-white p-4 opacity-[97.5%] dark:bg-black dark:opacity-[92.5%] sm:flex">
+        <div className="h-full flex-col justify-between bg-white p-4 opacity-95 dark:bg-black dark:opacity-90 sm:flex">
           <div>
             <h3 className="mb-2 text-lg font-semibold">{title}</h3>
             <p className="mb-8">{description}</p>
