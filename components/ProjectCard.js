@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 export default function ProjectCard({
   title,
   description,
@@ -9,8 +11,10 @@ export default function ProjectCard({
 }) {
   return (
     <Link href={link}>
-      <a
-        className={`transform bg-gradient-to-r ${gradient} p-1 transition-all hover:scale-[1.01]`}
+      <motion.a
+        className={`bg-gradient-to-r hover:bg-transparent ${gradient} p-1`}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
       >
         <div className="h-full flex-col justify-between bg-white p-4 opacity-95 dark:bg-black dark:opacity-90 sm:flex">
           <div>
@@ -28,7 +32,7 @@ export default function ProjectCard({
             ))}
           </ul>
         </div>
-      </a>
+      </motion.a>
     </Link>
   );
 }

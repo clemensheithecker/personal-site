@@ -1,6 +1,6 @@
 export default function ProjectInfo({ tags, link }) {
   return (
-    <div className="not-prose mb-6 flex flex-col items-center justify-between sm:flex-row">
+    <div className="not-prose mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between">
       <a
         href={link}
         target="_blank"

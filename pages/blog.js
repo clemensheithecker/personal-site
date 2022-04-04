@@ -4,6 +4,7 @@ import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import moment from "moment";
+import { motion } from "framer-motion";
 import path from "path";
 
 export default function Blog({ posts }) {
@@ -33,9 +34,10 @@ export default function Blog({ posts }) {
         <hr className="border-1 mb-8 w-full border-gray-200 dark:border-gray-800" />
         <ul className="space-y-8">
           {posts.map((post, index) => (
-            <li
+            <motion.li
               key={index}
-              className="transition-all hover:scale-[1.01] motion-reduce:transition-none"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               <Link href={"/blog/" + post.slug} passHref>
                 <a>
@@ -54,7 +56,7 @@ export default function Blog({ posts }) {
                   </p>
                 </a>
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
