@@ -12,7 +12,7 @@ export default function ProjectCard({
   return (
     <Link href={link}>
       <motion.a
-        className={`bg-gradient-to-r hover:bg-transparent ${gradient} p-1`}
+        className={`bg-gradient-to-r hover:cursor-pointer hover:bg-transparent ${gradient} p-1`}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
