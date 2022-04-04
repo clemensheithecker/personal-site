@@ -9,14 +9,14 @@ export default function Footer() {
           <ul className="space-y-4">
             <li>
               <Link href={"/"}>
-                <a className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-600 dark:hover:bg-gray-900">
+                <a className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900">
                   Home
                 </a>
               </Link>
             </li>
             <li>
               <Link href={"/blog"}>
-                <a className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-600 dark:hover:bg-gray-900">
+                <a className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900">
                   Blog
                 </a>
               </Link>
@@ -30,7 +30,7 @@ export default function Footer() {
                 href="https://github.com/clemensheithecker/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-600 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900"
               >
                 GitHub
               </a>
@@ -40,7 +40,7 @@ export default function Footer() {
                 href="https://twitter.com/cheithecker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-600 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900"
               >
                 Twitter
               </a>
@@ -50,7 +50,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/clemensheithecker/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-600 dark:hover:bg-gray-900"
+                className="rounded-lg px-3 py-2 text-base text-gray-500 transition-all hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-900"
               >
                 LinkedIn
               </a>

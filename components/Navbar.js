@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { useEffect, useState } from "react";
+
 import Navitem from "./Navitem";
 
 export default function Navbar() {
@@ -34,8 +36,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex space-x-2">
             {/* Home */}
-            <div className="font-semibold">
-              <Navitem href={"/"} name="Clemens S. Heithecker" />
+            <div className="">
+              <Link href="/">
+                <a className="flex items-center bg-black bg-clip-text px-3 py-1 text-base font-semibold text-transparent transition hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 dark:bg-white dark:hover:from-blue-500 dark:hover:to-purple-500 sm:text-lg">
+                  Clemens S. Heithecker
+                </a>
+              </Link>
             </div>
 
             {/* Primary navigation */}
