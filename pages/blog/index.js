@@ -36,6 +36,7 @@ export default function Blog({ posts }) {
           {posts.map((post, index) => (
             <motion.li
               key={index}
+              className="hover:cursor-pointer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >

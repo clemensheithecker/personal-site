@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import fs from "fs";
 import matter from "gray-matter";
+import { motion } from "framer-motion";
 import path from "path";
 import rehypeImgSize from "rehype-img-size";
 import remarkGfm from "remark-gfm";
@@ -59,9 +60,17 @@ export default function ProjectPage({
             placeholder="blur"
           />
         </div>
-        <div className="prose prose-bw mx-auto max-w-screen-md prose-h1:mb-6 prose-h1:font-serif prose-h1:text-4xl prose-h1:font-bold prose-h2:mb-4 prose-h2:mt-12 prose-h2:font-serif prose-p:mb-6 prose-p:leading-normal last-of-type:prose-p:mb-0 prose-a:break-words prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-2 hover:prose-a:underline-offset-2 prose-code:rounded-md prose-code:bg-gray-100 prose-code:py-1 prose-code:px-2 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:rounded-none prose-ul:list-[square] prose-li:leading-normal prose-table:mx-auto dark:prose-invert dark:prose-code:bg-gray-900 sm:prose-table:w-5/6 md:prose-table:w-4/6">
+        <motion.div
+          className="prose prose-bw mx-auto max-w-screen-md prose-h1:mb-6 prose-h1:font-serif prose-h1:text-4xl prose-h1:font-bold prose-h2:mb-4 prose-h2:mt-12 prose-h2:font-serif prose-p:mb-6 prose-p:leading-normal last-of-type:prose-p:mb-0 prose-a:break-words prose-a:no-underline hover:prose-a:underline hover:prose-a:decoration-2 hover:prose-a:underline-offset-2 prose-code:rounded-md prose-code:bg-gray-100 prose-code:py-1 prose-code:px-2 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-pre:rounded-none prose-ul:list-[square] prose-li:leading-normal prose-table:mx-auto dark:prose-invert dark:prose-code:bg-gray-900 sm:prose-table:w-5/6 md:prose-table:w-4/6"
+          initial={{ opacity: 0.75, y: 6 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.2, ease: [0, 0, 0.2, 1] },
+          }}
+        >
           <MDXRemote {...mdxSource} components={components} scope={data} />
-        </div>
+        </motion.div>
       </article>
     </>
   );
