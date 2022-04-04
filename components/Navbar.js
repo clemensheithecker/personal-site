@@ -36,9 +36,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex space-x-2">
             {/* Home */}
-            <div className="">
+            <div className="flex items-center">
               <Link href="/">
-                <a className="flex items-center rounded-lg bg-black bg-clip-text px-3 py-1 text-base font-semibold text-transparent transition hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 dark:bg-white dark:hover:from-blue-500 dark:hover:to-purple-500 sm:text-lg">
+                <a className="rounded-lg bg-black box-decoration-clone bg-clip-text px-3 py-1 font-semibold text-transparent transition hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 dark:bg-white dark:hover:from-blue-500 dark:hover:to-purple-500 sm:text-lg">
                   Clemens S. Heithecker
                 </a>
               </Link>
