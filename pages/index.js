@@ -58,7 +58,7 @@ export default function Home({ projects }) {
                     className="text-blue-600 hover:underline hover:decoration-blue-600 hover:decoration-2 hover:underline-offset-2 dark:text-blue-500 dark:hover:decoration-blue-500"
                   >
                     Tilburg University
-                  </a>
+                  </a>{" "}
                   in the Netherlands. Next, I want to focus more on computer
                   science and software engineering.
                 </p>
