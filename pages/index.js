@@ -38,11 +38,15 @@ export default function Home({ projects }) {
               <div>
                 <h2 className="mb-4 font-serif text-2xl font-bold">Hello,</h2>
                 <p className="mb-2">
-                  I am Clemens&mdash;a data and programming enthusiast ready to
-                  put my data wrangling, visualization, and modeling skills to
-                  work. My fascination with <em>data exploration</em>,{" "}
-                  <em>regression analyis</em>, and <em>machine learning</em>{" "}
-                  inspire me to learn something new every day.
+                  I am Clemens&mdash;a programming and software engineering
+                  enthusiast. I had always been passionate about computers and
+                  tech, but my fascination for <em>building with code</em>{" "}
+                  started during my undergraduate economics program. I enjoyed
+                  programming for all the statistical, modeling, and
+                  visualization work during my studies.{" "}
+                  <em>I tried to use code wherever I could</em>, which inspired
+                  me to learn more. I taught myself the basics of web
+                  development and built this portfolio website.
                 </p>
                 <p className="mb-2">
                   Currently, I am finalizing my bachelor of science degree in
@@ -55,7 +59,8 @@ export default function Home({ projects }) {
                   >
                     Tilburg University
                   </a>
-                  .
+                  in the Netherlands. Next, I want to focus more on computer
+                  science and software engineering.
                 </p>
                 <p className="mb-10 sm:mb-0">
                   Follow me on{" "}
@@ -102,8 +107,8 @@ export default function Home({ projects }) {
         <div className="mt-4 px-5 py-5 sm:py-8 sm:px-11">
           <h2 className="mb-4 font-serif text-2xl font-bold">Projects</h2>
           <p className="mb-8">
-            Here is a selection of my recent projects in which I applied my data
-            science skills:
+            Here is a selection of my recent projects in which I applied my
+            programming and data science skills.
           </p>
           <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {projects.map((project, index) => (
